@@ -1,0 +1,103 @@
+@import '../../../../../static/styles/modal.scss';
+
+.modal-content-remove {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 18px;
+
+  .avatar {
+    margin-right: 15px;
+  }
+
+  .modal-body-remove {
+    width: 20vw;
+    margin-bottom: 5.5vh;
+
+    .remove-identity {
+      p {
+        font-family: GalanoGrotesque-Medium;
+        font-size: 16px;
+        line-height: 130%;
+        color: #000000;
+      }
+
+      span {
+        font-family: GalanoGrotesque-Regular;
+        font-size: 12px;
+        line-height: 130%;
+        color: #000000;
+      }
+    }
+  }
+
+  .card {
+    border: none;
+  }
+}
+
+.take-action {
+  font-family: GalanoGrotesque-Regular;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #252525 !important;
+}
+
+.action-remove {
+  width: 20vw;
+  margin: 3px auto;
+
+  .cancel-button,
+  .remove-button {
+    padding: 15px 23px !important;
+    border-radius: 8px;
+    outline: none !important;
+    font-family: GalanoGrotesque-SemiBold;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+  }
+
+  .cancel-button {
+    color: #4d6ee4;
+    background-color: rgba(77, 110, 228, 0.15);
+  }
+
+  .remove-button {
+    color: #fff;
+    background-color: #4d6ee4;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  padding: 0 !important;
+  color: #aaaaaa;
+}
+
+.btn-secondary:hover {
+  background-color: #fff !important;
+  border-color: transparent !important;
+  color: #aaaaaa;
+}
+
+.dropdown-menu.show {
+  position: absolute;
+  left: -55px !important;
+  top: -4px !important;
+  min-width: 5rem !important;
+  font-size: 0.8rem !important;
+  transform: none !important;
+  border: transparent;
+  box-shadow: 0px 10px 8px -4px rgba(170, 170, 170, 0.6);
+}
+
+.dropdown-menu__item {
+  padding-left: 13px;
+}
+
+.dropdown-menu__item:hover {
+  background-color: #46c2e6;
+  color: #fff;
+}

@@ -1,0 +1,119 @@
+@import '../../../../static/styles/modal.scss';
+
+.toggle-send {
+  border-radius: 8px;
+  background: #4d6ee4;
+  color: #fff;
+  outline: none;
+  border: 1px solid #4d6ee4;
+  font-family: GalanoGrotesque-SemiBold;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 16px 0;
+}
+
+.modal-header-add-team {
+  .header-add-icon {
+    padding-top: 0.6rem;
+
+    h4 {
+      font-family: GalanoGrotesque-SemiBold;
+      font-size: 24px;
+      line-height: 130%;
+      color: #252525;
+    }
+
+    span {
+      font-size: 1.4rem;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
+
+.team-field__control {
+  position: relative;
+
+  input {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    border-radius: 8px;
+    border: 1px solid rgba(112, 112, 112, 0.7);
+    font-family: GalanoGrotesque-Medium;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 1rem 1rem;
+  }
+
+  input:focus {
+    border: 2px solid #46c2e6;
+    margin-bottom: -2px;
+    outline: none !important;
+  }
+
+  input::placeholder {
+    color: transparent;
+  }
+
+  label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    margin-left: 26px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    font-family: GalanoGrotesque-Medium;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  span {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    right: 1.7vw;
+    bottom: 1.2vw;
+    border: solid rgba(112, 112, 112, 0.7);
+    border-width: 0 1px 1px 0;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: all 0.3s ease-out;
+  }
+
+  input:required:invalid + label {
+    color: red;
+  }
+
+  input:focus:required:invalid {
+    border: 2px solid red;
+  }
+
+  input:required:invalid + label:before {
+    content: '*';
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    margin-top: -5px;
+    font-family: GalanoGrotesque-Regular;
+    font-size: 10px;
+    line-height: 12px;
+    background-color: #fff;
+    padding-left: 4px;
+    padding-right: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input:focus + label + span,
+  input:not(:placeholder-shown) + label + span {
+    transform: rotate(45deg) !important;
+    -webkit-transform: rotate(45deg) !important;
+    transition: all 0.3s ease-out;
+  }
+}
